@@ -17,8 +17,8 @@ RUN apt-get clean
 
 # Javascript
 RUN npm install -g yarn
-RUN npm install -g @angular/cli
-RUN npm install -g node-sass
+RUN yarn add global @angular/cli
+RUN yarn add global node-sass
 
 # Cloud Tools
 RUN curl -O https://bootstrap.pypa.io/get-pip.py
